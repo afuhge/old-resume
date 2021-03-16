@@ -11,13 +11,13 @@
       <div>
         <font-awesome-icon icon="envelope" fixed-width/>
       </div>
-      <div class="info-text">{{ Person.email }}</div>
+      <a class="info-text" :href="'mailto:' + Person.email">{{ Person.email }}</a>
     </div>
     <div class="info">
       <div>
         <font-awesome-icon :icon="['fab', 'github']" fixed-width/>
       </div>
-      <a class="info-text" :href="Person.github" style="color:white; text-decoration: none;">{{ Person.github }}</a>
+      <a class="info-text" target="_blank" :href="Person.github">{{ Person.github }}</a>
     </div>
   </div>
 </template>
@@ -42,6 +42,13 @@ export default {
 
 }
 
+.info a {
+  color:white; text-decoration: none;
+}
+
+.info a:hover {
+  color:white; text-decoration: underline;
+}
 
 .sidebar-title {
   color:white;

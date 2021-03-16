@@ -53,9 +53,7 @@ export default {
 <style scoped>
 .middlepart {
   font-size: 28px; /* Increased text to enable scrolling */
-  background-color: #bec9ca;
-  height: 100%;
-  overflow: auto;
+
 }
 
 .title {

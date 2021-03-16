@@ -28,7 +28,6 @@ export default {
 .sidebar {
   height: 100%;
   background-color: #17889A;
-  overflow-x: hidden;
   display: grid;
   border-right: solid 4px #017488;
 }

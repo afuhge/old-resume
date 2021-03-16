@@ -13,7 +13,9 @@ import {Person} from "@/components/Person";
 export default {
   name: "profile",
   data: function() {
-    return {Person}
+    return {
+      Person
+    }
   }
 }
 </script>
@@ -32,11 +34,23 @@ export default {
   padding-bottom: 10px;
 }
 
-
 img {
   margin-top:-6px;
   width: 55%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+@media (max-width: 800px) {
+  img {
+    width: 33%;
+  }
+}
+
+@media (max-width: 380px) {
+  img {
+    width: 90%;
+  }
+}
+
 </style>

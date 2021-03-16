@@ -121,4 +121,10 @@ export default {
   border-radius: 10px;
 
 }
+
+@media (max-width: 800px) {
+  .skills {
+   padding-bottom: 20px;
+  }
+}
 </style>
