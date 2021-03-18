@@ -83,4 +83,24 @@ export default {
   }
 }
 
+@media print {
+  .grid-item1, .grid-item3 {
+    display:none;
+  }
+  .site {
+    display: block;
+
+  }
+  .left {
+    width:40%
+  }
+  .right {
+    flex-grow: 1;
+  }
+
+  .resume {
+    flex-direction: row;
+  }
+}
+
 </style>

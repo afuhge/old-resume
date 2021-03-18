@@ -53,4 +53,10 @@ img {
   }
 }
 
+@media print {
+  img {
+    width: 55%;
+  }
+}
+
 </style>

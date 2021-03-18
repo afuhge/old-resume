@@ -7,6 +7,8 @@
         <div class="container">
           <h3 class="m-0"><b>{{work1.name}}</b></h3>
           <h5 class="m-0">{{work1.university}}, {{work1.year}}</h5>
+          <div style="margin-top: 15px;"><em v-html="work1.tasks"></em></div>
+          <div style="margin-top: 15px;">Technologien:<em v-for="(tech, index) in work1.technologies" :key="tech.name"> <a target="_blank" :href="tech.link"> {{ tech.name }}<sup><font-awesome-icon class="icon" icon="link" /></sup><span v-if="index+1 < work1.technologies.length">,</span></a></em></div>
         </div>
       </div>
       </div>
@@ -51,6 +53,22 @@ export default {
 </script>
 
 <style scoped>
+
+a{
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+.icon {
+  display:inline-block;
+  height:12px;
+  margin-left:4px;
+  color: #738b8c;
+}
 .middlepart {
   font-size: 28px; /* Increased text to enable scrolling */
 

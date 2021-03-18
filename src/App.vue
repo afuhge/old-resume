@@ -23,4 +23,13 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+a.links {
+  color:#2c3e50;
+  text-decoration: none;
+}
+
+a.links:hover{
+  text-decoration: underline;
+}
 </style>
